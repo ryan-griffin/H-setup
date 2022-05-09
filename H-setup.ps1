@@ -14,7 +14,6 @@ foreach ($day in "Mon", "Tue", "Wed", "Thu", "Fri") {
             $null = mkdir "H:\$yearDir\$weekDir\Pro\$day" -ErrorAction Stop
         } elseif (($type -eq "2") -or ($type -eq "web")) {
             $null = mkdir "H:\$yearDir\$weekDir\Web\$day" -ErrorAction Stop
-        } else {
         }
     } catch {}
 }
