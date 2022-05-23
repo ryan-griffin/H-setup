@@ -18,10 +18,8 @@ while (($type -ne "1") -and ($type -ne "programming") -and ($type -ne "2") -and 
 foreach ($day in $settings.Monday, $settings.Tuesday, $settings.Wednesday, $settings.Thursday, $settings.Friday) {
     try {
         if (($type -eq "1") -or ($type -eq "pro")) {
-            $pro = $settings.Programming
             $null = mkdir "H:\$year\$week\$pro\$day" -ErrorAction Stop
         } elseif (($type -eq "2") -or ($type -eq "web")) {
-            $web = $settings.Web
             $null = mkdir "H:\$year\$week\$web\$day" -ErrorAction Stop
         }
     } catch {}
