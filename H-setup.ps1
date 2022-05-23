@@ -27,6 +27,7 @@ foreach ($day in $settings.Monday, $settings.Tuesday, $settings.Wednesday, $sett
 
 try {$null = mkdir "H:\$year\$week\$ale" -ErrorAction Stop}
 catch {}
+
 if (-not(Test-Path "H:\$year\$week\worklog.docx")) {
     cp worklog.docx "H:\$year\$week"
 }
